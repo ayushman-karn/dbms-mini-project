@@ -1,0 +1,28 @@
+.form-class{
+    text-align: center;
+    margin-top: 10rem;
+}
+.name-space{
+    margin-right:0.9rem;
+}
+
+#usn{
+    margin-top: 1rem;
+}
+#sem{
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+.space{
+    margin-right: 1.4rem;
+}
+button {
+    background-color: #1c1d1c; /* Green */
+    border: none;
+    color: rgb(253, 249, 249);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    
+  }
