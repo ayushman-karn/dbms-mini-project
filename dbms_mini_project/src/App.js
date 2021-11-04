@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from "react";
+import Form from "./Form.js"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "./index.css";
+export function Navbar() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <nav className="navbar navbar-light bg-dark">
+      <a id="home-link" className="navbar-brand" href="/" style={{ color: "white" }}   >
+        HOME
+      </a>
+    </nav>
   );
+}
+class App extends React.Component {
+
+  render() {
+    return (<div className="App" >
+      <Navbar />
+      <Form />
+    </div>
+    )
+
+  }
 }
 
 export default App;
