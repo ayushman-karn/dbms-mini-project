@@ -1,0 +1,192 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./resultStyle.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Report</title>
+  </head>
+  <body>
+    <div class="student-details">
+      <p><b>NAME : <%= marks.name%></b></p>
+      <p><b>USN: <%= marks.usn%></b></p>
+      <p><b>SEMESTER: 3RD</b></p>
+      <p><b>BRANCH: ISE</b></p>
+      <p><b>SECTION: A</b></p>
+      <p><b>COLLEGE: DSATM</b></p>
+      <a href="/companies">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <b>COMPANIES</b>
+      </a>
+    </div>
+    <div class="container">
+      <table>
+        <thead>
+          <tr>
+            <td colspan="3">Course</td>
+            <td rowspan="2">Credits</td>
+            <td rowspan="2">Marks</td>
+            <td colspan="2">Grade</td>
+          </tr>
+          <tr>
+            <td>Code</td>
+            <td colspan="2">Name</td>
+            <td>Letter</td>
+            <td>Points</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>18MAT31</td>
+            <td colspan="2">TRANSFORM CALCULUS,FOURIER SERIES & NUM TECH</td>
+            <td>4</td>
+            <td><%= marks.s1 %></td>
+            <td>
+              <%= ["", "S+", "F", "F", "D", "C", "B", "A", "S",
+              "S+"][(marks.s1.toString()[0])]%>
+            </td>
+            <td>
+              <%= ["0", "10", "0", "0", "5", "6", "7", "8", "9",
+              "10"][(marks.s1.toString()[0])]%>
+            </td>
+          </tr>
+          <tr>
+            <td>18CS32</td>
+            <td colspan="2">DATA STRUCTURES AND APPLICATIONS</td>
+            <td>4</td>
+            <td><%= marks.s2 %></td>
+            <td>
+              <%= ["", "S+", "F", "F", "D", "C", "B", "A", "S",
+              "S+"][(marks.s2.toString()[0])]%>
+            </td>
+            <td>
+              <%= ["0", "10", "0", "0", "5", "6", "7", "8", "9",
+              "10"][(marks.s2.toString()[0])]%>
+            </td>
+          </tr>
+          <tr>
+            <td>18CS33</td>
+            <td colspan="2">ANALOG AND DIGITAL ELECTRONICS</td>
+            <td>3</td>
+            <td><%= marks.s3 %></td>
+            <td>
+              <%= ["", "S+", "F", "F", "D", "C", "B", "A", "S",
+              "S+"][(marks.s3.toString()[0])]%>
+            </td>
+            <td>
+              <%= ["0", "10", "0", "0", "5", "6", "7", "8", "9",
+              "10"][(marks.s3.toString()[0])]%>
+            </td>
+          </tr>
+          <tr>
+            <td>18CS34</td>
+            <td colspan="2">COMPUTER ORGANIZATION</td>
+            <td>3</td>
+            <td><%= marks.s4 %></td>
+            <td>
+              <%= ["", "S+", "F", "F", "D", "C", "B", "A", "S",
+              "S+"][(marks.s4.toString()[0])]%>
+            </td>
+            <td>
+              <%= ["0", "10", "0", "0", "5", "6", "7", "8", "9",
+              "10"][(marks.s4.toString()[0])]%>
+            </td>
+          </tr>
+          <tr>
+            <td>18CS35</td>
+            <td colspan="2">SOFTWARE ENGINEERING</td>
+            <td>3</td>
+            <td><%= marks.s5 %></td>
+            <td>
+              <%= ["", "S+", "F", "F", "D", "C", "B", "A", "S",
+              "S+"][(marks.s5.toString()[0])]%>
+            </td>
+            <td>
+              <%= ["0", "10", "0", "0", "5", "6", "7", "8", "9",
+              "10"][(marks.s5.toString()[0])]%>
+            </td>
+          </tr>
+          <tr>
+            <td>18CS36</td>
+            <td colspan="2">DISCRETE MATHEMATICAL STRUCTURES</td>
+            <td>3</td>
+            <td><%= marks.s6 %></td>
+            <td>
+              <%= ["", "S+", "F", "F", "D", "C", "B", "A", "S",
+              "S+"][(marks.s6.toString()[0])]%>
+            </td>
+            <td>
+              <%= ["0", "10", "0", "0", "5", "6", "7", "8", "9",
+              "10"][(marks.s6.toString()[0])]%>
+            </td>
+          </tr>
+          <tr>
+            <td>18CSL37</td>
+            <td colspan="2">ANALOG AND DIGITAL ELECTRONICS LABORATORY</td>
+            <td>2</td>
+            <td><%= marks.s7 %></td>
+            <td>
+              <%= ["", "S+", "F", "F", "D", "C", "B", "A", "S",
+              "S+"][(marks.s7.toString()[0])]%>
+            </td>
+            <td>
+              <%= ["0", "10", "0", "0", "5", "6", "7", "8", "9",
+              "10"][(marks.s7.toString()[0])]%>
+            </td>
+          </tr>
+          <tr>
+            <td>18CSL38</td>
+            <td colspan="2">DATA STRUCTURES LABORATORY</td>
+            <td>2</td>
+            <td><%= marks.s8 %></td>
+            <td>
+              <%= ["", "S+", "F", "F", "D", "C", "B", "A", "S",
+              "S+"][(marks.s8.toString()[0])]%>
+            </td>
+            <td>
+              <%= ["0", "10", "0", "0", "5", "6", "7", "8", "9",
+              "10"][(marks.s8.toString()[0])]%>
+            </td>
+          </tr>
+          <tr>
+            <td>18KVK39</td>
+            <td colspan="2">VYAVAHARIKA KANNADA</td>
+            <td>1</td>
+            <td><%= marks.s9 %></td>
+            <td>
+              <%= ["", "S+", "F", "F", "D", "C", "B", "A", "S",
+              "S+"][(marks.s9.toString()[0])]%>
+            </td>
+            <td>
+              <%= ["0", "10", "0", "0", "5", "6", "7", "8", "9",
+              "10"][(marks.s9.toString()[0])]%>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4" class="footer">Percentage</td>
+            <td colspan="3"><%= (marks.avg).toString().substr(0,5) %></td>
+          </tr>
+          <tr>
+            <td colspan="4" class="footer">GPA</td>
+            <td colspan="3">
+              <%= (marks.avg/10 + 0.4).toString().slice(0,3) %>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>
